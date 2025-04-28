@@ -5,6 +5,10 @@ test.describe("Home page with no auth", () => {
     await page.goto("https://practicesoftwaretesting.com/");
   });
 
+  test("visual test", async ({ page }) => {
+    await expect(page).toHaveScreenshot("home-page-no-auth.png");
+  });
+
   test("check sign in", async ({ page }) => {
     await expect(page.getByTestId("nav-sign-in")).toHaveText("Sign in");
   });
