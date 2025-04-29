@@ -53,4 +53,4 @@ test("GET /products/{id}", async ({ request }) => {
   expect(body.is_rental).toBe(false);
   expect(body.name).toBe("Combination Pliers");
   expect(body.price).toBe(14.15);
-});``
+});
